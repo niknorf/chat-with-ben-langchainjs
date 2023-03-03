@@ -3,7 +3,7 @@ from pathlib import Path
 from langchain.document_loaders import ReadTheDocsLoader
 
 if __name__ == "__main__":
-    loader = ReadTheDocsLoader("langchain.readthedocs.io/en/latest/")
+    loader = ReadTheDocsLoader("gutenberg.org/files/20203/20203-h/")
     raw_documents = loader.load()
     dir_path = Path("ingested_data")
     dir_path.mkdir(parents=True, exist_ok=True)
