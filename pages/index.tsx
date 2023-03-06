@@ -128,10 +128,6 @@ export default function Home() {
 		];
 	}, [messages, pending]);
 
-	const githubLink = () => {
-		window.open("https://github.com/niknorf/chat-with-ben-langchainjs");
-	};
-
 	return (
 		<>
 			<Head>
