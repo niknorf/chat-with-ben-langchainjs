@@ -128,6 +128,10 @@ export default function Home() {
 		];
 	}, [messages, pending]);
 
+	const githubLink = () => {
+		window.open("https://github.com/niknorf/chat-with-ben-langchainjs");
+	};
+
 	return (
 		<>
 			<Head>
@@ -142,11 +146,11 @@ export default function Home() {
 				</div>
 				<div className={styles.navlinks}>
 					<a
-						href="https://www.gutenberg.org/files/20203/20203-h/20203-h.htm"
+						href="https://github.com/niknorf/chat-with-ben-langchainjs"
 						target="_blank"
 						rel="noreferrer"
 					>
-						The source book
+						Source code on GitHub
 					</a>
 				</div>
 			</div>
